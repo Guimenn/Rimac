@@ -16,9 +16,49 @@
                 window.location.href = 'cont2.html'; // Redireciona para outra página após a submissão
             };
         };
+        const checkbox = document.getElementById('openmenu');
+        const pai = document.querySelector('.pai');
+        const video = document.querySelector('.bg_video');
+        const body = document.body;
+
+        checkbox.addEventListener('change', function () {
+            if (checkbox.checked) {
+                pai.style.filter = 'blur(32px)';
+                video.style.filter = 'blur(32px)';
+                body.classList.add('lock-scroll');
+            } else {
+                pai.style.filter = 'none';
+                video.style.filter = 'none';
+                body.classList.remove('lock-scroll');
+            }
+        });
     </script>
 </head>
 <body>
+    <header>
+        <div class="menu-container">
+            <input type="checkbox" id="openmenu" class="hamburger-checkbox">
+            <div class="hamburger-icon">
+                <label for="openmenu" id="hamburger-label">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <div class="menu-pane">
+                <nav>
+                    <ul class="menu-links" type="none">
+                        <li><a href="../index.html">Home</a>
+                        </li>
+                        <li><a href="###">Sobre Nós</a>
+                        </li>
+                        <li><a href="ativ/cont.html">Contato</a></li>
+                        <li><a href="###">Carros </a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
     <div class="pai">
         <div class="login">
          <h1>
