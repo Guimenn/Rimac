@@ -8,26 +8,28 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/estilo.css">
     <link rel="stylesheet" href="estilos/mediaquery-contato.css">
+    
+    
 </head>
 
 <body>
+
 
     <div>
         <video autoplay loop class="bg_video">
             <source src="video/video.mp4" type="video/mp4">
         </video>
         <header>
-
             <div class="menu-container">
                 <input type="checkbox" id="openmenu" class="hamburger-checkbox">
-                    <div class="hamburger-icon">
-                        <label for="openmenu" id="hamburger-label">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </label>
-                    </div>
+                <div class="hamburger-icon">
+                    <label for="openmenu" id="hamburger-label">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
                 <div class="menu-pane">
                     <nav>
                         <ul class="menu-links" type="none">
@@ -36,18 +38,17 @@
                             <li><a href="###">Sobre Nós</a>
                             </li>
                             <li><a href="###">Contato</a></li>
-                            <li><a href="###">Carros    </a></li>
+                            <li><a href="###">Carros </a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="logo">
-                    <img src="" alt="">
-                </div>
+                <div class="blurr">
+                    <div class="imagem"><img src="imagens/Rimac-Logo.png" alt=""></div>
         </header>
     </div>
-    <main>
+    <main class="body-text">
         <section>
-            
+
             <div class="slogan">
                 <h1>Acelere o futuro<br>com pura<br>Eletricidade.</h1>
             </div>
@@ -82,12 +83,41 @@
                     </div>
                 </div>
             </div>
-    
-        
+        </section>
+        <section class="carros">
+            <h1>Modelos</h1>
+            <div class="modelos">
+                <div class="carro"><img src="imagens/concepttwo.png" alt=""></div>
+                <div class="carro"><img src="imagens/fkxoxfygcqm9kemlxixh.png" alt=""></div>
+                <div class="carro"><img src="imagens/R.jfif" alt=""></div>
+            </div>
         </section>
 
 
     </main>
+    </div>
+
+    <script>
+        const checkbox = document.getElementById('openmenu');
+        const blurr = document.querySelector('.blurr');
+        const video = document.querySelector('.bg_video');
+        const body = document.body;
+
+        checkbox.addEventListener('change', function () {
+            if (checkbox.checked) {
+                blurr.style.filter = 'blur(32px)';
+                video.style.filter = 'blur(32px)';
+                body.classList.add('lock-scroll');
+            } else {
+                blurr.style.filter = 'none';
+                video.style.filter = 'none';
+                body.classList.remove('lock-scroll');
+            }
+        });
+        
+        
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous";></script>
 
 
 </body>
