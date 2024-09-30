@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/cont.3.css">
+    <script>
+        window.onload = function() {
+            const form = document.querySelector('form');
+
+            form.onsubmit = function(event) {
+                event.preventDefault(); // Previne o envio imediato do formulário
+                alert('Login efetuado com sucesso!'); // Exibe a mensagem
+                // Submete o formulário ao PHP e depois redireciona
+                form.submit(); // Submissão ao PHP
+                window.location.href = 'login.html'; // Redireciona para outra página após a submissão
+            };
+        };
+    </script>
+</head>
+<body>
+    <div class="pai">
+        <div class="login">
+         <h1>
+          CRIE SUA CONTA NA RIMAC
+         </h1>
+         <br>
+         <div class="area">
+            <form action="login.php" method="post">
+                <label for="senha"> Digite seu nome </label>
+                <input type="text" id="name" name="nome" required placeholder="Seu nome"> <br><br>
+
+                <label for="email"> Digite seu Email</label>
+                <input type="email" id="email" name="email" required placeholder="Ex: Seunome1232@gmail.com"> <br><br>
+
+                <label for="senha">Coloque seu senha</label>
+                <input type="password" id="password" name="password" required placeholder="Ex: (FSJD24233)"> <br><br>
+
+                <label for="confirma-senha">Confirmar Senha</label>
+                <input type="password" id="confirma-senha" name="confirma-senha" required placeholder=""> <br><br>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 0000-0000"><br><br>
+                <div class="aceito">
+                    <p>Eu li e concordo com os termos de uso </p>
+                    <input type="checkbox" id="check" required placeholder="checkbox">
+                </div>
+                <br>
+                <button class="botao" type="submit" name="Continuar">Continuar</button><br>
+                
+                
+
+              </form>
+         </div>
+         
+
+
+         <div class="footer">
+          <p>
+           Esta página usa hCaptcha. Para mais detalhes, consulte a Proteção de Dados ou o Aviso Legal.
+          </p> <br><br>
+          <div class="link">
+              <a href="#">
+               Informações Legais
+              </a> <br><br>
+              <a href="#">
+               Política de Privacidade
+              </a><br><br>
+              <a href="#">
+               Modo de exibição
+              </a>
+          </div>
+         </div>
+        </div>
+        <div class="foto"></div>
+       </div>
+</body>
+</html>
