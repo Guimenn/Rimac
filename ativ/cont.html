@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="css/cont.css">
+    <script>
+        window.onload = function() {
+            const form = document.querySelector('form');
+
+            form.onsubmit = function(event) {
+                event.preventDefault(); // Previne o envio imediato do formulário
+                // Submete o formulário ao PHP e depois redireciona
+                form.submit(); // Submissão ao PHP
+                window.location.href = 'cont2.html'; // Redireciona para outra página após a submissão
+            };
+        };
+    </script>
 </head>
 <body>
     <div class="pai">
