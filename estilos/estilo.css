@@ -307,6 +307,9 @@ input.hamburger-checkbox {
 
 .carros {
   background-color: white;
+  z-index: 1;
+  padding: 20px;
+  min-height: 500px; /* Altura mínima para garantir que a seção fique visível */
 }
 
 .carros > h1 {
@@ -436,4 +439,145 @@ input.hamburger-checkbox {
   background-color: rgb(175, 175, 175);
 }
 
+/* Responsividade geral */
 
+
+@media (max-width: 768px) {
+  .slogan {
+    font-size: 2em;
+    padding: 0 10px;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+    padding: 20px; /* Para evitar elementos muito colados */
+  }
+
+  .modelos {
+    grid-template-columns: 1fr;
+  }
+
+  .contato {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imglado {
+    margin-bottom: 20px;
+  }
+
+  .imglado img {
+    width: 100%;
+  }
+
+  .textlado {
+    max-width: 100%;
+  }
+
+  .hamburger-icon {
+    top: 2vh; /* Ajuste de espaçamento para menus menores */
+    left: 2vw;
+  }
+
+  .hamburger-icon span {
+    width: 25px;
+  }
+
+  .bg_video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .slogan {
+    font-size: 1.5em;
+    padding-bottom: 30%;
+  }
+
+  .card2 h1 {
+    font-size: 1.5em;
+  }
+
+  .card2 button {
+    font-size: 0.8em;
+  }
+
+  .cards {
+    margin-bottom: 20%;
+  }
+
+  .textlado h1 {
+    font-size: 1.5em;
+  }
+
+  .textlado a {
+    font-size: 1em;
+    padding: 8px 15px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .cards {
+    padding: 10px;
+    z-index: 1;
+  }
+
+  .carros {
+    z-index: 1;
+  }
+
+  /* Se necessário ajustar as imagens dentro das cards */
+  .card {
+    height: 150px; /* Altura ajustável conforme o conteúdo */
+  }
+
+  /* Ajuste adicional para imagens nas cards */
+  .image-container img {
+    width: 100vw;
+  }
+
+  span.branco {
+    height: 600px;
+    background-color: white;
+  }
+  }
+
+    
+
+  /*.hamburger-icon span {
+    width: 20px;
+  }
+
+  .slogan {
+    font-size: 1.2em;
+  }
+
+  .bg_video {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .card2 h1 {
+    font-size: 1.2em;
+  }
+
+  .card2 button {
+    font-size: 0.7em;
+  }
+
+  .cards {
+    margin-bottom: 30%;
+  }
+
+  .textlado h1 {
+    font-size: 1.2em;
+  }
+
+  .textlado a {
+    font-size: 0.9em;
+    padding: 5px 10px;
+  }
+
+  .contato {
+    padding: 20px; /* Ajuste de espaçamento para telas menores */ 
