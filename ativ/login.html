@@ -6,6 +6,19 @@
     <title>Login</title>
     <link rel="stylesheet" href="css/cont.3.css">
     <script>
+        const checkbox = document.getElementById('openmenu');
+        const pai = document.querySelector('.pai');
+        const body = document.body;
+
+        checkbox.addEventListener('change', function () {
+            if (checkbox.checked) {
+                pai.style.filter = 'blur(32px)';
+                body.classList.add('lock-scroll');
+            } else {
+                pai.style.filter = 'none';
+                body.classList.remove('lock-scroll');
+            }
+        });
         window.onload = function() {
             const form = document.querySelector('form');
 
@@ -17,10 +30,35 @@
                 window.location.href = '/index.html'; // Redireciona para outra página após a submissão
             };
         };
+        
     </script>
 </head>
 <body>
-    <div class="pai">
+    <header>
+        <div class="menu-container">
+            <input type="checkbox" id="openmenu" class="hamburger-checkbox">
+            <div class="hamburger-icon">
+                <label for="openmenu" id="hamburger-label">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <div class="menu-pane">
+                <nav>
+                    <ul class="menu-links" type="none">
+                        <li><a href="../index.html">Home</a>
+                        </li>
+                        <li><a href="###">Sobre Nós</a>
+                        </li>
+                        <li><a href="cont.html">Contato</a></li>
+                        <li><a href="###">Carros </a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <div class="pai blurr"> 
         <div class="login">
          <h1>
           CRIE SUA CONTA NA RIMAC
@@ -59,17 +97,17 @@
          <div class="footer">
           <p>
            Esta página usa hCaptcha. Para mais detalhes, consulte a Proteção de Dados ou o Aviso Legal.
-          </p> <br><br>
+          </p> 
           <div class="link">
               <a href="#">
                Informações Legais
-              </a> <br><br>
-              <a href="#">
-               Política de Privacidade
-              </a><br><br>
-              <a href="#">
-               Modo de exibição
               </a>
+              <a href="#">
+                Política de Privacidade
+               </a>
+               <a href="#">
+                Modo de exibição
+               </a>
           </div>
          </div>
         </div>

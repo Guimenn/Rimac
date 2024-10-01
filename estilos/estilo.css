@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
   margin: 0px;
@@ -327,7 +327,7 @@ input.hamburger-checkbox {
   width: 100%;
   display: flex;
   flex-direction: column;
-  max-width: 700px;
+  max-width: 800px;
   height: 750px;
   color: white;
   background-color: #ffffff;
@@ -337,13 +337,13 @@ input.hamburger-checkbox {
 }
 
 .card2 h1 {
-    position: absolute;
-    padding: 20px;
-    color: rgb(255, 255, 255);
-    font-size: 3em;
-    font-weight: 500;
-    z-index: 2;
-    font-family: "Allura", cursive;
+  position: absolute;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 3em;
+  font-weight: 500;
+  z-index: 2;
+  font-family: "Allura", cursive;
 }
 
 .card2:hover .image-container img {
@@ -352,26 +352,25 @@ input.hamburger-checkbox {
 }
 
 .card2 button {
-    background-color: white;
-    color: black;
-    width: 90%;
-    border-radius: 3px;
-    position: sticky;
-    bottom: 0;
-    transform: translateY(-40px);
-    height: 50px;
-    border: none;
-    font-size: 1.2em;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-
+  background-color: white;
+  color: black;
+  width: 90%;
+  border-radius: 3px;
+  position: sticky;
+  bottom: 0;
+  transform: translateY(-40px);
+  height: 50px;
+  border: none;
+  font-size: 1.2em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 .card2 button:hover {
-    cursor: pointer;
-    background-color: #d4d4d4ea;
-    color: black;
-    transition: 0.5s;
+  cursor: pointer;
+  background-color: #d4d4d4ea;
+  color: black;
+  transition: 0.5s;
 }
 
 .image-container {
@@ -381,10 +380,60 @@ input.hamburger-checkbox {
   overflow: hidden;
 }
 
-.image-container img {
+.card2 .image-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transform: scale(1);
+  background-repeat: repeat;
   transition: transform 0.5s ease-in-out;
   /* Efeito de zoom suave */
-}   
+}
+
+.card img:nth-of-type(3) {
+  transform: scale(1.1);
+}
+
+.contato {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.imglado {
+  width: 50%;
+}
+
+.imglado img {
+  width: 200%;
+  transform: translateX(-50%);
+}
+
+.textlado {
+  width: 50%;
+  display: block;
+  text-align: justify;
+  margin: auto;
+  width: 500px;
+  font-size: 1.5em;
+}
+
+
+.textlado a {
+  text-decoration: none;
+  width: 300px;
+  height: 100px;
+  background-color: rgb(32, 32, 32);
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid rgb(230, 230, 230);
+  color: rgb(255, 255, 255);
+}
+
+.textlado a:hover {
+  background-color: rgb(175, 175, 175);
+}
+
+
