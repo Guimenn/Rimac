@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concept Two</title>
+    <link rel="stylesheet" href="estilos/concepttwo.css" />
+    <link rel="shortcut icon" href="../imagens/rimac-logo2-scaled.png" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <div class="menu-container">
+        <input type="checkbox" id="openmenu" class="hamburger-checkbox">
+        <div class="hamburger-icon">
+            <label for="openmenu" id="hamburger-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <div class="menu-pane">
+            <nav>
+                <ul class="menu-links" type="none">
+                    <li><a href="###">Home</a>
+                    </li>
+                    <li><a href="###" id="lista">Carros</a>
+                        <ul class="submenu" type="none">
+                          <li><a href="conceptone.html">Concept One</a></li>
+                          <li><a href="nevera.html">Nevera</a></li>
+                          <li><a href="ctwo.html">Concept Two</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../ativ/cont.html">Contato</a></li>
+                    <li><a href="###">Sobre Nós</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="blurr">
+        <div class="gradi">
+            <section class="t2" id="centodieci">
+              <h1>Rimac C-Two</h1>
+              <p>Potência Sem Limites, Sustentabilidade em Movimento.</p>
+              <a href="#purchase" class="btn1">Compre Agora</a>
+            </section>
+            <section class="features1" id="features1">
+              <h2>Características Incríveis</h2>
+              <div class="feature-list1 list">
+                <div class="feature-item1">
+                  <h3>Tecnologia de Freios Regenerativos Superpotentes</h3>
+                  <p>
+                    O Rimac Concept Two aproveita um avançado sistema de freios regenerativos, que não apenas desacelera o carro com eficiência, mas também converte a energia cinética em eletricidade, recarregando a bateria. Esse recurso maximiza a autonomia do veículo, ao mesmo tempo que reduz o desgaste dos freios convencionais, garantindo uma maior durabilidade e sustentabilidade durante a condução de alta performance.
+                  </p>
+                </div>
+                <div class="feature-item1">
+                  <h3>Velocidade em Alta Perfomance</h3>
+                  <p>
+                    Embora o Concept Two não tenha o recorde de marcha-à-ré como o Nevera, ele detém uma marca impressionante na aceleração: é um dos carros mais rápidos do mundo, alcançando 412 km/h. O sistema de tração nas quatro rodas e o design aerodinâmico o tornam um superesportivo capaz de atingir números incomparáveis.
+                  </p>
+                </div>
+                <div class="feature-item1">
+                  <h3>Aceleração Revolucionária</h3>
+                  <p>
+                    O Rimac Concept Two acelera de 0 a 100 km/h em apenas 1,97 segundos, redefinindo o conceito de velocidade. A tração individual das quatro rodas, combinada com a potência de 1.914 cv, garante um desempenho inigualável em termos de aceleração e controle, aproveitando ao máximo a potência dos motores elétricos
+                  </p>
+                </div>
+              </div>
+            </section>
+              <div class="banner1">
+                <span></span>
+              </div>
+            <section class="specs1" id="specs1">
+              <h2>Especificações Técnicas</h2>
+              <table>
+                <tr>
+                    <th>Motor</th>
+                    <td>4 motores elétricos (um em cada roda)</td>
+                  </tr>
+                  <tr>
+                    <th>Potência</th>
+                    <td>1950 cv</td>
+                  </tr>
+                  <tr>
+                    <th>Velocidade Máxima</th>
+                    <td>402 km/h</td>
+                  </tr>
+                  <tr>
+                    <th>0-100 km/h</th>
+                    <td>2,07 segundos</td>
+                  </tr>
+                  <tr>
+                    <th>Bateria</th>
+                    <td>120 kWh</td>
+                  </tr>
+                  <tr>
+                    <th>Torque</th>
+                    <td>2400 Nm</td>
+                  </tr>
+                  <tr>
+                    <th>Preço</th>
+                    <td>R$ 10.800.000,00</td>
+              </table>
+            </section>
+                <div class="banner1">
+                  <span></span>
+                </div>
+    </main>
+    </div>
+    <script>
+        const checkbox = document.getElementById('openmenu');
+        const blurr = document.querySelector('.blurr');
+        const body = document.body;
+
+        checkbox.addEventListener('change', function () {
+            if (checkbox.checked) {
+                blurr.style.filter = 'blur(32px)';
+                body.classList.add('lock-scroll');
+            } else {
+                blurr.style.filter = 'none';
+                body.classList.remove('lock-scroll');
+            }
+        });
+        
+        
+    </script>
+  </body>
+</html>

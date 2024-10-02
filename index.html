@@ -32,10 +32,15 @@
                         <ul class="menu-links" type="none">
                             <li><a href="###">Home</a>
                             </li>
-                            <li><a href="###">Sobre Nós</a>
+                            <li><a href="###" id="lista">Carros</a>
+                                <ul class="submenu" type="none">
+                                    <li><a href="modelos/conceptone.html">Concept One</a></li>
+                                    <li><a href="modelos/nevera.html">Nevera</a></li>
+                                    <li><a href="modelos/ctwo.html">Concept Two</a></li>
+                                </ul>
                             </li>
                             <li><a href="ativ/cont.html">Contato</a></li>
-                            <li><a href="###">Carros </a></li>
+                            <li><a href="###">Sobre Nós</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -86,20 +91,20 @@
             <div class="modelos">
                 <div class="card2">
                     <h1>C-Two</h1>
-                    <div class="image-container"><img src="imagens/unnamed (1).png" alt="Rimac Concept Two"  style="object-fit: fill;">
-                        <button>Compre o C-Two</button>
+                    <div class="image-container"><img src="imagens/unnamed (1).png" alt="Rimac Concept Two"  style="object-fit: fill">
+                        <a href="modelos/ctwo.html"><button>Compre o C-Two</button></a>
                     </div>
                 </div>
                 <div class="card2">
                     <h1>Nevera</h1>
                     <div class="image-container"><img src="imagens/unnamed.png" alt="Rimac Nevera">
-                        <button>Compre o Nevera</button>
+                        <a href="modelos/nevera.html"><button>Compre o Nevera</button></a>
                     </div>
                 </div>
                 <div class="card2">
                     <h1>Concept One</h1>
                     <div class="image-container"><img src="imagens/concept_one_env_03ra.jpg" alt="Rimac Concept One">
-                        <button>Compre o Concept One</button>
+                        <a href="modelos/conceptone.html"><button>Compre o Concept One</button></a>
                     </div>
                 </div>
             </div>
@@ -122,6 +127,7 @@
     </div>
 
     <script>
+        
         const checkbox = document.getElementById('openmenu');
         const blurr = document.querySelector('.blurr');
         const video = document.querySelector('.bg_video');

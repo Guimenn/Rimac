@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concept One</title>
+    <link rel="stylesheet" href="estilos/conceptone.css" />
+    <link rel="shortcut icon" href="../imagens/rimac-logo2-scaled.png" type="image/x-icon">
+    
+  </head>
+  <body>
+    <header>
+      <div class="menu-container">
+        <input type="checkbox" id="openmenu" class="hamburger-checkbox">
+        <div class="hamburger-icon">
+            <label for="openmenu" id="hamburger-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <div class="menu-pane">
+            <nav>
+                <ul class="menu-links" type="none">
+                    <li><a href="###">Home</a>
+                    </li>
+                    <li><a href="###" id="lista">Carros</a>
+                        <ul class="submenu" type="none">
+                          <li><a href="conceptone.html">Concept One</a></li>
+                          <li><a href="nevera.html">Nevera</a></li>
+                          <li><a href="ctwo.html">Concept Two</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../ativ/cont.html">Contato</a></li>
+                    <li><a href="###">Sobre Nós</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="blurr">
+        <div class="gradi">
+            <section class="t2" id="centodieci">
+              <h1>Rimac Concept One</h1>
+              <p>Reescrevendo as Regras da Performance Elétrica.</p>
+              <a href="#purchase" class="btn1">Compre Agora</a>
+            </section>
+            <section class="features1" id="features1">
+              <h2>Características Incríveis</h2>
+              <div class="feature-list1 list">
+                <div class="feature-item1">
+                  <h3>Pioneirismo Elétrico no Mundo dos Supercarros</h3>
+                  <p>
+                    Lançado como o primeiro hipercarro elétrico de produção, o Concept One inaugurou uma nova era de veículos elétricos de alta performance. Equipado com uma bateria de 90 kWh, ele foi um dos primeiros carros a quebrar a barreira de 1.000 cv, tornando-se referência para futuros supercarros elétricos. A autonomia de até 350 km e a recarga rápida mostraram o potencial dos elétricos em longas distâncias.
+                  </p>
+                </div>
+                <div class="feature-item1">
+                  <h3>Interface Digital Personalizável</h3>
+                  <p>
+                    Dentro do Concept One, a interface digital foi projetada para ser completamente personalizável. O motorista pode ajustar os parâmetros de desempenho do carro, como a distribuição de potência entre as rodas, níveis de frenagem regenerativa e modos de condução, diretamente do painel de controle. Isso proporciona uma experiência de condução adaptada ao estilo e às preferências individuais​
+                  </p>
+                </div>
+                <div class="feature-item1">
+                  <h3>Bateria de Alto Desempenho</h3>
+                  <p>
+                    O Concept One utiliza uma bateria de 90 kWh, composta por células de íon de lítio de alta densidade energética. Com essa configuração, ele oferece uma combinação única de autonomia e potência, permitindo uma aceleração brutal sem comprometer a distância que o carro pode percorrer. A engenharia da Rimac permitiu uma integração perfeita entre a bateria e o sistema de gerenciamento de energia, maximizando a eficiência e o desempenho.
+
+
+                  </p>
+                </div>
+              </div>
+            </section>
+              <div class="banner1">
+                <span></span>
+              </div>
+            <section class="specs1" id="specs1">
+              <h2>Especificações Técnicas</h2>
+              <table>
+                <tr>
+                  <th>Motor</th>
+                  <td>4 motores elétricos (um em cada roda)</td>
+                </tr>
+                <tr>
+                  <th>Potência</th>
+                  <td>1224 cv</td>
+                </tr>
+                <tr>
+                  <th>Velocidade Máxima</th>
+                  <td>355 km/h</td>
+                </tr>
+                <tr>
+                  <th>0-100 km/h</th>
+                  <td>2,5 segundos</td>
+                </tr>
+                <tr>
+                  <th>Bateria</th>
+                  <td>90 kWh</td>
+                </tr>
+                <tr>
+                  <th>Torque</th>
+                  <td>1600 Nm</td>
+                </tr>
+                <tr>
+                  <th>Preço</th>
+                  <td>R$ 5.000.000,00</td>
+                </tr>
+              </table>
+            </section>
+                <div class="banner1">
+                  <span></span>
+                </div>
+    </main>
+    </div>
+    <script>
+        const checkbox = document.getElementById('openmenu');
+        const blurr = document.querySelector('.blurr');
+        const body = document.body;
+
+        checkbox.addEventListener('change', function () {
+            if (checkbox.checked) {
+                blurr.style.filter = 'blur(32px)';
+                body.classList.add('lock-scroll');
+            } else {
+                blurr.style.filter = 'none';
+                video.style.filter = 'none';
+                body.classList.remove('lock-scroll');
+            }
+        });
+        
+        
+    </script>
+  </body>
+</html>

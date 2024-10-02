@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concept One</title>
+    <link rel="stylesheet" href="estilos/nevera.css" />
+    <link rel="shortcut icon" href="../imagens/rimac-logo2-scaled.png" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <div class="menu-container">
+        <input type="checkbox" id="openmenu" class="hamburger-checkbox">
+        <div class="hamburger-icon">
+            <label for="openmenu" id="hamburger-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <div class="menu-pane">
+            <nav>
+                <ul class="menu-links" type="none">
+                    <li><a href="###">Home</a>
+                    </li>
+                    <li><a href="###" id="lista">Carros</a>
+                        <ul class="submenu" type="none">
+                            <li><a href="conceptone.html">Concept One</a></li>
+                            <li><a href="nevera.html">Nevera</a></li>
+                            <li><a href="ctwo.html">Concept Two</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../ativ/cont.html">Contato</a></li>
+                    <li><a href="###">Sobre Nós</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="blurr">
+        <div class="gradi">
+            <section class="t2" id="centodieci">
+              <h1>Rimac Nevera</h1>
+              <p>Desempenho Elétrico para os Verdadeiros Aventureiros.</p>
+              <a href="#purchase" class="btn1">Compre Agora</a>
+            </section>
+            <section class="features1" id="features1">
+              <h2>Características Incríveis</h2>
+              <div class="feature-list1 list">
+                <div class="feature-item1">
+                  <h3>Aerodinâmica Ativa e Inteligente</h3>
+                  <p>
+                    O design do Nevera não é apenas visualmente impressionante, mas
+                    também inteligentemente funcional. Ele possui um sistema de
+                    aerodinâmica ativa que ajusta automaticamente elementos da
+                    carroceria em alta velocidade, garantindo estabilidade em curvas e
+                    aumentando o desempenho em linha reta. Cada detalhe foi feito para
+                    otimizar o fluxo de ar e reduzir a resistência.
+                  </p>
+                </div>
+                <div class="feature-item1">
+                  <h3>Recorde de Ré Inigualável</h3>
+                  <p>
+                    Superesportivo croata com quase 2.000 cv de potência, o Rimac Nevera
+                    é oficialmente o carro mais rápido do mundo em marcha-à-ré. O
+                    Guinness World Records oficializou o título depois de o modelo
+                    alcançar incríveis 275 km/h no sentido reverso.
+                  </p>
+                </div>
+                <div class="feature-item1">
+                  <h3>Aceleração Revolucionária</h3>
+                  <p>
+                    O Rimac Nevera redefine o conceito de velocidade com sua aceleração
+                    recorde de 0 a 100 km/h em apenas 1,97 segundos. Sua capacidade de
+                    entregar essa aceleração fulminante é resultado de uma engenharia
+                    avançada de motores elétricos que operam de forma independente em
+                    cada roda, garantindo máxima tração e controle.
+                  </p>
+                </div>
+              </div>
+            </section>
+              <div class="banner1">
+                <span></span>
+              </div>
+            <section class="specs1" id="specs1">
+              <h2>Especificações Técnicas</h2>
+              <table>
+                <tr>
+                  <th>Motor</th>
+                  <td>4 motores elétricos (um em cada roda)</td>
+                </tr>
+                <tr>
+                  <th>Potência</th>
+                  <td>1914 cv</td>
+                </tr>
+                <tr>
+                  <th>Velocidade Máxima</th>
+                  <td>412 km/h</td>
+                </tr>
+                <tr>
+                  <th>0-100 km/h</th>
+                  <td>1,97 segundos</td>
+                </tr>
+                <tr>
+                  <th>Bateria</th>
+                  <td>120 kWh</td>
+                </tr>
+                <tr>
+                  <th>Torque</th>
+                  <td>2360 Nm</td>
+                </tr>
+                <tr>
+                  <th>Preço</th>
+                  <td>R$ 12.000.000,00</td>
+                </tr>
+              </table>
+            </section>
+                <div class="banner1">
+                  <span></span>
+                </div>
+    </main>
+    </div>
+    <script>
+        const checkbox = document.getElementById('openmenu');
+        const blurr = document.querySelector('.blurr');
+        const body = document.body;
+
+        checkbox.addEventListener('change', function () {
+            if (checkbox.checked) {
+                blurr.style.filter = 'blur(32px)';
+                body.classList.add('lock-scroll');
+            } else {
+                blurr.style.filter = 'none';
+                body.classList.remove('lock-scroll');
+            }
+        });
+        
+        
+    </script>
+  </body>
+</html>
