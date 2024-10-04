@@ -163,11 +163,10 @@ span {
 }
 
 .menu-links li a {
-  color: rgb(0, 0, 0);
+  color: #101820;
   text-decoration: none;
   padding: 10px;
   cursor: pointer;
-  color: #000000;
   position: relative;
   z-index: 1;
 }
@@ -187,7 +186,7 @@ span {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgb(69, 68, 70);
+  background: #17222e;
   border-radius: 20px;
   z-index: -1;
   transition: width 0.5s ease-in-out;
@@ -358,6 +357,8 @@ button a {
 .carros > h1 {
   font-size: 3em;
   padding: 15px;
+  color: #203850;
+  text-shadow: 2px 0.5px 0px #203850;
 }
 
 .carros img {
@@ -476,7 +477,7 @@ button a {
 #encontre {
   font-size: 2.4em;
   padding-bottom: 5px;
-  color: #333;
+  color: #203850;
   text-shadow: 1px 2px 1px #333333a2;
   
 }
@@ -493,21 +494,21 @@ button a {
   padding: 10px;
   font-size: 1.4rem;
   border-radius: 5px;
-  border: 2px solid gray;
+  border: 2px solid #203850;
   color: rgb(0, 0, 0);
 }
 
 #register {
-  background-color: gray;
+  background-color: #203850;
   color: white;
 }
 
 #register:hover {
-  background-color: rgba(128, 128, 128, 0.61);
+  background-color: #203850a8;
 }
 
 .textlado a:hover {
-  background-color: rgb(175, 175, 175);
+  background-color: #203850;
   color: white;
 }
 
@@ -615,42 +616,3 @@ button a {
     background-color: white;
   }
   }
-
-    
-
-  /*.hamburger-icon span {
-    width: 20px;
-  }
-
-  .slogan {
-    font-size: 1.2em;
-  }
-
-  .bg_video {
-    width: 100vw;
-    height: 100vh;
-  }
-
-  .card2 h1 {
-    font-size: 1.2em;
-  }
-
-  .card2 button {
-    font-size: 0.7em;
-  }
-
-  .cards {
-    margin-bottom: 30%;
-  }
-
-  .textlado h1 {
-    font-size: 1.2em;
-  }
-
-  .textlado a {
-    font-size: 0.9em;
-    padding: 5px 10px;
-  }
-
-  .contato {
-    padding: 20px; /* Ajuste de espaçamento para telas menores */ 
