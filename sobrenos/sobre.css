@@ -1,17 +1,19 @@
-body {
-    font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
-    display: flex;
-    height: 100vh;
-    background-color: #f5f5f5;
-    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body, main {
+    width: 100vw        ;
 }
 
 body.lock-scroll {
     overflow: hidden;
 }
-
 .body-text {
     padding-top: 20vh;
     text-align: center;
@@ -177,96 +179,113 @@ body.lock-scroll {
   }
 
 
-
-.pai {
-    display: flex;
-    width: 100%;
-    background-color: #0B132B;
-}
-.login {
-    width: 40%;
-    padding-left: 200px;
-    box-sizing: border-box;
-    padding-top: 250px;
-}
-.foto {
-    width: 60%;
-    background: url(../DALL·E\ 2024-09-27\ 16.40.12\ -\ A\ silhouette\ of\ a\ luxury\ sports\ car\ on\ a\ dark\ background.\ The\ car\ is\ sleek\ and\ modern\,\ with\ sharp\ lines\ and\ a\ streamlined\ design.\ The\ silhouette\ is\ il.webp) center center;
+.banner1{
+    height: 40vw;
+    background: url(img/bannerzaço.webp);
+    background-repeat: no-repeat;
     background-size: cover;
 }
+.fundo{
+    background-color: rgb(62, 62, 62);
+    height: 30vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 
-h1 {
-    font-size: 32px;
+}
+.texto      {
     color: white;
-    margin-bottom: 10px;
-}
-p {
-    font-size: 14px;
-    color: white;
-    margin-bottom: 20px;
-}
-a {
-    color: #0066cc;
-    text-decoration: none;
-}
-
-
-.area {
-    margin-bottom: 20px;
-}
-.area label {
-    display: block;
-    font-size: 18px;
-    color: white;
-    margin-bottom: 4px;
-}
-.area input {
-    width: 20vw;
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-.botao {
-    display: block;
-    width: 21vw;
-    padding: 10px;
-    font-size: 14px;
-    color: #fff;
-    background-color: #3C1361;
-    border: none;
-    border-radius: 4px;
-    cursor:pointer;
-}
-.footer {
-    margin-top: 20px;
-    font-size: 12px;
-    color: #666;
-    width: 21vw;
-}
-.footer a {
-    display: block;
-    margin-bottom: 5px;
-}
-.link{
-    font-size: 20px;
-    color: #333;
-    margin-bottom: 10px;
+    padding: 10vw;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
     
 }
-.link a{
-
-    color:white
+.fundo2{
+    height: 40vw;
+    display: flex;
+}
+.foto1{
+    background: url(img/print1.jpeg);
+    width: 50vw;
+    position: relative;
+    height: 40vw;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    padding-bottom: 40px;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+    
+}
+.foto2{
+    background: url(img/foto2.webp);
+    width: 50vw;
+    height: 40vw;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    transform: translateY(-60px);
+    transition: opacity 0.5s ease;
+    opacity: 1;
 }
 
-.link a:after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: #3d1361c0; /* cor azul */
-  }
 
-.botao:hover{
-    background-color: #3d1361c0;
+
+.text-content {
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    background-image: linear-gradient(to top, black, black, rgb(19, 18, 18), rgb(26, 26, 26),transparent);
+    color: white; /* cor do texto */
+    margin: 0;
+    box-sizing: border-box; /* garante que o padding não aumente a largura total */
+    text-align: justify; /* alinha o texto */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3) ;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif ;
+    line-height: 1.5;
+    letter-spacing: 2.0;
+    padding: 30px;
+}
+
+.text-content:hover{
+    opacity: 1;
+}
+.parede{
+    width: 60.3vw;
+    height: 40vw;   
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+}
+.perfil{
+    background:  url(img/perfilMate.jpg);
+    background-size: cover;
+    width: 800px;
+    height: 250px;
+    margin: auto 25px;
+}
+.linha{
+    height: 20vw;
+    width: 1px;
+    background-color: black;
+    margin: auto;
+}
+.proposito{
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    margin: auto 25px;
+}
+.carro {
+    background: url(img/rimac-nevera-sets-the-ev-top-speed-world-record-1-17-screenshot-imagem-capa.png);
+    height: 40vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.founder{
+    font-size: 15px;
+    font-weight: 300;
 }
