@@ -265,7 +265,7 @@ body.lock-scroll {
     opacity: 0;
     transition: opacity 0.5s ease;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3) ;
-    font-size: 16px;
+    font-size: 1.1rem;
     font-family: "Montserrat", sans-serif ;
     line-height: 1.5;
     letter-spacing: 2.0;
@@ -299,8 +299,8 @@ body.lock-scroll {
 .perfil{
     background:  url(img/perfilMate.jpg);
     background-size: cover;
-    width: 800px;
-    height: 250px;
+    width: 40vw;
+    height: 15vw;
     margin: auto 25px;
 }
 .linha{
@@ -311,7 +311,7 @@ body.lock-scroll {
 }
 .proposito{
     font-family: "Montserrat", sans-serif;
-    font-size: 24px;
+    font-size: 1.6rem;
     margin: auto 25px;
 }
 .carro {
@@ -321,7 +321,7 @@ body.lock-scroll {
     background-size: cover;
 }
 .founder{
-    font-size: 15px;
+    font-size: 0.6em;
     font-weight: 300;
 }
 
