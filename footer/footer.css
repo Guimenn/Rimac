@@ -49,6 +49,7 @@ body{
 footer{
     display: block;
     margin: auto;
+    background-color: #101820;
 }
 .baixo a{
     font-size: 12px;
