@@ -272,9 +272,22 @@ body.lock-scroll {
     padding: 90px;
 }
 
-.text-content:hover{
+.foto1:hover .text-content{
     opacity: 1;
 }
+
+.foto2:hover .text-content{
+  opacity: 1;
+}
+
+.foto3:hover .text-content{
+  opacity: 1;
+}
+
+.foto4:hover .text-content{
+  opacity: 1;
+}
+
 .parede{
     width: 60.3vw;
     height: 40vw;   
