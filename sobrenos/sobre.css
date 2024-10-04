@@ -206,27 +206,49 @@ body.lock-scroll {
     display: flex;
 }
 .foto1{
-    background: url(img/print1.jpeg);
+    background: url(img/historia.jpg);
     width: 50vw;
     position: relative;
     height: 40vw;
     background-repeat: no-repeat;
     background-size: cover ;
-    padding-bottom: 40px;
     transition: opacity 0.5s ease;
     opacity: 1;
     
 }
 .foto2{
-    background: url(img/foto2.webp);
+  background: url(img/Mclaren.jpg);
+  width: 50vw;
+  height: 40vw;
+  background-repeat: no-repeat;
+  background-size: cover ;
+  transform: translateY(-60px);
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+.foto3{
+  background: url(img/tampaCarro.jfif);
+  width: 50vw;
+  position: relative;
+  height: 40vw;
+  background-repeat: no-repeat;
+  background-size: cover ;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+  
+}
+.foto4{
+  background: url(img/DesenhoCarro.webp);
     width: 50vw;
     height: 40vw;
     background-repeat: no-repeat;
     background-size: cover ;
+    background-position: right center;
     transform: translateY(-60px);
     transition: opacity 0.5s ease;
     opacity: 1;
 }
+
 
 
 
@@ -235,7 +257,7 @@ body.lock-scroll {
     bottom: 0; 
     left: 0; 
     right: 0;
-    background-image: linear-gradient(to top, black, black, rgb(19, 18, 18), rgb(26, 26, 26),transparent);
+    background-image: linear-gradient(to top, black, black, rgba(26, 24, 24, 0.897), rgba(34, 34, 34, 0.808),transparent);
     color: white; /* cor do texto */
     margin: 0;
     box-sizing: border-box; /* garante que o padding não aumente a largura total */
@@ -243,11 +265,11 @@ body.lock-scroll {
     opacity: 0;
     transition: opacity 0.5s ease;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3) ;
-    font-size: 20px;
+    font-size: 16px;
     font-family: "Montserrat", sans-serif ;
     line-height: 1.5;
     letter-spacing: 2.0;
-    padding: 30px;
+    padding: 90px;
 }
 
 .text-content:hover{
@@ -290,9 +312,6 @@ body.lock-scroll {
     font-weight: 300;
 }
 
-.pai{
-  text-align: center;
-}
 .logo{
   margin-bottom: 20px;
 }
@@ -331,6 +350,7 @@ footer{
   margin: auto;
   background-color: #101820;
   color: white;
+  text-align: center;
 }
 .baixo a{
   font-size: 12px;
