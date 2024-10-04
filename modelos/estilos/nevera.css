@@ -256,7 +256,7 @@ input.hamburger-checkbox {
 }
 
 .gradi {
-  background-image: linear-gradient(to bottom, #1d1d1d, #000000);
+  background-image: linear-gradient(to top, #16212c, #090d11);
 }
 
 .features1::before {

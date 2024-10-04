@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esqueci minha senha</title>
+    <link rel="stylesheet" href="css/novasenha.css">
+    <link rel="shortcut icon" href="../imagens/rimac-logo2-scaled.png" type="image/x-icon">
+    <script>
+        window.onload = function() {
+            const form = document.querySelector('form');
+
+            form.onsubmit = function(event) {
+                event.preventDefault(); // Previne o envio imediato do formulário
+                alert('Nova senha confirmada'); // Exibe a mensagem
+                // Submete o formulário ao PHP e depois redireciona
+                form.submit(); // Submissão ao PHP
+                window.location.href = '../index.html'; // Redireciona para outra página após a submissão
+            };
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h2>Digite sua nova senha</h2>
+            <form action="#" method="post">
+                <label for="password">Nova senha</label>
+                <input type="password" id="password" name="password" placeholder="(we234sadasd)" required>
+                <br><br>
+                <label for="password">confirma-senha</label>
+                <input type="password" id="password" name="password" placeholder=""required>
+                <button type="submit">Confirmar senha</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
