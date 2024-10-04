@@ -220,6 +220,14 @@ a {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+.area a{
+  color: white;
+  text-decoration: none;
+}
+.area a:hover{
+  color: #0066cc;
+  transition-duration: 0.2s;
+}
 .botao {
     display: block;
     width: 21vw;

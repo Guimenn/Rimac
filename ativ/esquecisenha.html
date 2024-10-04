@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esqueci minha senha</title>
+    <link rel="stylesheet" href="css/esqueci.css">
+    <script>
+        window.onload = function() {
+            const form = document.querySelector('form');
+
+            form.onsubmit = function(event) {
+                event.preventDefault(); // Previne o envio imediato do formulário
+                alert('Código para o email enviado'); // Exibe a mensagem
+                // Submete o formulário ao PHP e depois redireciona
+                form.submit(); // Submissão ao PHP
+                window.location.href = 'novasenha.html'; // Redireciona para outra página após a submissão
+            };
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h2>Recuperar Senha</h2>
+            <form action="#" method="post">
+                <label for="email">Digite seu e-mail:</label>
+                <input type="email" id="email" name="email" placeholder="nome@exemplo.com" required>
+                <button type="submit">Enviar link de recuperação</button>
+            </form>
+            <p>Se você não se lembra do e-mail, entre em contato com o suporte.</p>
+        </div>
+    </div>
+
+</body>
+</html>
