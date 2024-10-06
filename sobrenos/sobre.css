@@ -333,9 +333,15 @@ body.lock-scroll {
   justify-content: center;
   margin:10px;
   font-size: 14px;
+  transition: opacity 0.3s ease; /* transição suave de opacidade */
+}
 
+.linhas:hover .button:not(:hover) {
+  opacity: 0.5;
+}
 
-  
+.button:hover a{
+  opacity: 1;
 }
 .linhas a{
 
