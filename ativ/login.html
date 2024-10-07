@@ -29,23 +29,23 @@
             const confirmPassword = document.getElementById('confirma-senha');
 
             form.onsubmit = function(event) {
-                event.preventDefault(); // Previne o envio imediato do formulário
+                event.preventDefault(); 
 
-                // Verifica se os campos de senha foram preenchidos
+                
                 if (!password.value || !confirmPassword.value) {
                     alert('Por favor, preencha os dois campos de senha.');
-                    return; // Impede o envio do formulário
+                    return; 
                 }
 
-                // Verifica se as senhas são iguais
+            
                 if (password.value !== confirmPassword.value) {
                     alert('As senhas não coincidem.');
-                    return; // Impede o envio do formulário
+                    return; 
                 }
 
-                alert('Login efetuado com sucesso!'); // Exibe a mensagem
-                form.submit(); // Submissão ao PHP
-                window.location.href = '../index.html'; // Redireciona para outra página após a submissão
+                alert('Login efetuado com sucesso!'); 
+                form.submit(); 
+                window.location.href = '../index.html';
             };
         };
     </script>
