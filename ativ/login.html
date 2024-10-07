@@ -22,18 +22,33 @@
         });
     </script>
 
-        <script>
-            window.onload = function() {
-                const form = document.querySelector('form');
-                form.onsubmit = function(event) {
-                    event.preventDefault(); // Previne o envio imediato do formulário
-                    alert('Login efetuado com sucesso!'); // Exibe a mensagem
-                    // Submete o formulário ao PHP e depois redireciona
-                    form.submit(); // Submissão ao PHP
-                    window.location.href = '../index.html'; // Redireciona para outra página após a submissão
-                };
+    <script>
+        window.onload = function() {
+            const form = document.querySelector('form');
+            const password = document.getElementById('password');
+            const confirmPassword = document.getElementById('confirma-senha');
+
+            form.onsubmit = function(event) {
+                event.preventDefault(); 
+
+                
+                if (!password.value || !confirmPassword.value) {
+                    alert('Por favor, preencha os dois campos de senha.');
+                    return; 
+                }
+
+            
+                if (password.value !== confirmPassword.value) {
+                    alert('As senhas não coincidem.');
+                    return; 
+                }
+
+                alert('Login efetuado com sucesso!'); 
+                form.submit(); 
+                window.location.href = '../index.html';
             };
-        </script>
+        };
+    </script>
         
 </head>
 <body>
@@ -78,7 +93,7 @@
                 <label for="email"> Digite seu Email</label>
                 <input type="email" id="email" name="email" required placeholder="Ex: Seunome1232@gmail.com"> <br><br>
 
-                <label for="senha">Coloque seu senha</label>
+                <label for="senha">Coloque sua senha</label>
                 <input type="password" id="password" name="password" required placeholder="Ex: (FSJD24233)"> <br><br>
 
                 <label for="confirma-senha">Confirmar Senha</label>
@@ -88,17 +103,12 @@
                 <input type="tel" id="telefone" name="telefone" placeholder="(00) 0000-0000"><br><br>
                 <div class="aceito">
                     <p>Eu li e concordo com os termos de uso </p>
-                    <input type="checkbox" id="check" required placeholder="checkbox">
+                    <input type="checkbox" id="check" required>
                 </div>
                 <br>
                 <button class="botao" type="submit" name="Continuar">Continuar</button><br>
-                
-                
-
               </form>
          </div>
-         
-
 
          <div class="footer">
           <p>
