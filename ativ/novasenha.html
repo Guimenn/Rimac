@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,19 +35,64 @@
     </script>
 </head>
 <body>
-    <div class="container">
-        <div class="form-section">
-            <h2>Digite sua nova senha</h2>
-            <form action="#" method="post">
-                <label for="password">Nova senha</label>
-                <input type="password" id="password" name="password" placeholder="Digite sua nova senha" required>
-                <br><br>
-                <label for="confirm-password">Confirmar senha</label>
-                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirme sua senha" required>
-                <button type="submit">Confirmar senha</button>
-            </form>
-        </div>
-    </div>
+    <header>
+        <div class="menu-container">
+            <input type="checkbox" id="openmenu" class="hamburger-checkbox">
+            <div class="hamburger-icon">
+                <label for="openmenu" id="hamburger-label">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <div class="menu-pane">
+                <nav>
+                    <ul class="menu-links" type="none">
+                        <li><a href="../index.html">Home</a>
+                        <li><a href="###" id="lista">Carros</a>
+                            <ul class="submenu" type="none">
+                                <li><a href="../modelos/conceptone.html">Concept One</a></li>
+                                <li><a href="../modelos/nevera.html">Nevera</a></li>
+                                <li><a href="../modelos/ctwo.html">Concept Two</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="ativ/cont.html">Contato</a></li>
+                        <li><a href="../sobrenos/sobre.html">Sobre Nós</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <div class="blurr">
+        <main>
+            <div class="container">
+                <div class="form-section">
+                    <h2>Digite sua nova senha</h2>
+                    <form action="#" method="post">
+                        <label for="password">Nova senha</label>
+                        <input type="password" id="password" name="password" placeholder="Digite sua nova senha" required>
+                        <br><br>
+                        <label for="confirm-password">Confirmar senha</label>
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirme sua senha" required>
+                        <button type="submit">Confirmar senha</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>  
+    <script>
+    const checkbox = document.getElementById('openmenu');
+        const blurr = document.querySelector('.blurr');
+        const body = document.body;
+
+        checkbox.addEventListener('change', function () {
+            if (checkbox.checked) {
+                blurr.style.filter = 'blur(32px)';
+                body.classList.add('lock-scroll');
+            } else {
+                blurr.style.filter = 'none';
+                body.classList.remove('lock-scroll');
+            }
+        });</script>
 
 </body>
 </html>

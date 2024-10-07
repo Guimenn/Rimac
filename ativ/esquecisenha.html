@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,19 +19,65 @@
             };
         };
     </script>
+    
 </head>
 <body>
-    <div class="container">
-        <div class="form-section">
-            <h2>Recuperar Senha</h2>
-            <form action="#" method="post">
-                <label for="email">Digite seu e-mail:</label>
-                <input type="email" id="email" name="email" placeholder="nome@exemplo.com" required>
-                <button type="submit">Enviar link de recuperação</button>
-            </form>
-            <p>Se você não se lembra do e-mail, entre em contato com o suporte.</p>
-        </div>
+    <header>
+        <div class="menu-container">
+            <input type="checkbox" id="openmenu" class="hamburger-checkbox">
+            <div class="hamburger-icon">
+                <label for="openmenu" id="hamburger-label">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <div class="menu-pane">
+                <nav>
+                    <ul class="menu-links" type="none">
+                        <li><a href="../index.html">Home</a>
+                        <li><a href="###" id="lista">Carros</a>
+                            <ul class="submenu" type="none">
+                                <li><a href="../modelos/conceptone.html">Concept One</a></li>
+                                <li><a href="../modelos/nevera.html">Nevera</a></li>
+                                <li><a href="../modelos/ctwo.html">Concept Two</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="ativ/cont.html">Contato</a></li>
+                        <li><a href="../sobrenos/sobre.html">Sobre Nós</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <div class="blurr">
+        <main>
+            <div class="container">
+                <div class="form-section">
+                    <h2>Recuperar Senha</h2>
+                    <form action="#" method="post">
+                        <label for="email">Digite seu e-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="nome@exemplo.com" required>
+                        <button type="submit">Enviar link de recuperação</button>
+                    </form>
+                    <p>Se você não se lembra do e-mail, entre em contato com o suporte.</p>
+                </div>
+            </div>
+        </main>
     </div>
+    <script>
+        const checkbox = document.getElementById('openmenu');
+            const blurr = document.querySelector('.blurr');
+            const body = document.body;
+    
+            checkbox.addEventListener('change', function () {
+                if (checkbox.checked) {
+                    blurr.style.filter = 'blur(32px)';
+                    body.classList.add('lock-scroll');
+                } else {
+                    blurr.style.filter = 'none';
+                    body.classList.remove('lock-scroll');
+                }
+            });</script>
 
 </body>
 </html>
