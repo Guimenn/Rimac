@@ -192,7 +192,7 @@ input.hamburger-checkbox {
 }
 
 .background img {
-  width: 100vw;
+  width: 99vw;
   height: 100vh;
   object-fit: cover;
   background-position: bottom center;
