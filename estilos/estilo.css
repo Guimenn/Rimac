@@ -524,7 +524,7 @@ button a {
   justify-content: center;
   margin:10px;
   font-size: 14px;
-  transition: opacity 0.3s ease; /* transição suave de opacidade */
+  transition: opacity 0.3s ease;
 }
 
 .linhas:hover .button:not(:hover) {
