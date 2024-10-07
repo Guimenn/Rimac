@@ -11,10 +11,10 @@
             const form = document.querySelector('form');
 
             form.onsubmit = function(event) {
-                event.preventDefault(); // Previne o envio imediato do formulário
-                // Submete o formulário ao PHP e depois redireciona
-                form.submit(); // Submissão ao PHP
-                window.location.href = 'cont2.html'; // Redireciona para outra página após a submissão
+                event.preventDefault(); 
+                
+                form.submit();
+                window.location.href = 'cont2.html'; 
             };
         };
         
