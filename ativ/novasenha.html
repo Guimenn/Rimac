@@ -9,11 +9,25 @@
     <script>
         window.onload = function() {
             const form = document.querySelector('form');
+            const password = document.getElementById('password');
+            const confirmPassword = document.getElementById('confirm-password');
 
             form.onsubmit = function(event) {
                 event.preventDefault(); // Previne o envio imediato do formulário
+                
+                // Verifica se os campos estão preenchidos
+                if (!password.value || !confirmPassword.value) {
+                    alert('Por favor, preencha os dois campos de senha.');
+                    return; // Impede o envio do formulário
+                }
+
+                // Verifica se as senhas são iguais
+                if (password.value !== confirmPassword.value) {
+                    alert('As senhas não coincidem.');
+                    return; // Impede o envio do formulário
+                }
+
                 alert('Nova senha confirmada'); // Exibe a mensagem
-                // Submete o formulário ao PHP e depois redireciona
                 form.submit(); // Submissão ao PHP
                 window.location.href = '../index.html'; // Redireciona para outra página após a submissão
             };
@@ -26,10 +40,10 @@
             <h2>Digite sua nova senha</h2>
             <form action="#" method="post">
                 <label for="password">Nova senha</label>
-                <input type="password" id="password" name="password" placeholder="(we234sadasd)" required>
+                <input type="password" id="password" name="password" placeholder="Digite sua nova senha" required>
                 <br><br>
-                <label for="password">confirma-senha</label>
-                <input type="password" id="password" name="password" placeholder=""required>
+                <label for="confirm-password">Confirmar senha</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirme sua senha" required>
                 <button type="submit">Confirmar senha</button>
             </form>
         </div>
