@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 650px) {
+
+
+    div.menu-pane {
+        background-color: #ffffff;
+        position: absolute;
+        transform: translateX(-155vw);
+        transform-origin: (0, 0);
+        width: 100%;
+        height: 100vh;
+        transition: 0.6s ease-in-out;
+        z-index: 100;
+        font-size: 0.6em;
+      }
+     
+     h1 {
+        font-size: 2em;
+        color: rgba(255, 255, 255, 0.932);
+        font-family: "Bebas Neue", sans-serif;
+     }
+     
+     h2 {
+        font-size: 1.2em;
+        font-family: "Bebas Neue", sans-serif;
+     }
+    
+     .t2 {
+      background-position: center center;
+      text-align: center;
+     }
+
+     .t3 {
+      background: url(../img/2024-bugatti-mistral.jpg);
+      background-position: center center;
+     }
+
+
+     .list {
+      display: grid;
+      grid-auto-columns: auto;
+      justify-content: center;
+      z-index: -1;
+      margin-left: calc(-5vw);
+     }  
+
+     .linhas {
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        font-size: 1.3em;
+
+     }
+
+     .linhas a {
+        margin: 20px;
+     }
+
+     .baixo {
+        display: flex;
+        flex-direction: column;
+     }
+
+     .baixo p, .baixo h3, .baixo a{
+        font-size: 1em;
+        padding: 5px;
+     }
+     
+ 
+}
+
+@media screen and (min-width: 651px) and (max-width: 1200px) {
+    
+    
+    
+    div.menu-pane {
+        background-color: #ffffff;
+        position: absolute;
+        transform: translateX(-155vw);
+        transform-origin: (0, 0);
+        width: 80%;
+        height: 100vh;
+        transition: 0.6s ease-in-out;
+        z-index: 100;
+        font-size: 1em;
+      }
+    
+    .list {
+        display: grid;
+        grid-auto-columns: auto;
+        justify-content: center;
+        z-index: -1;
+       }  
+
+       .feature-item1 {
+        display: block;
+        margin: auto;
+       }
+  
+}
