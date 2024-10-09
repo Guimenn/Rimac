@@ -3,6 +3,7 @@
 @media screen and (max-width: 650px) {
 
     body {
+        display: grid;
         height: 100vh;
         padding: 0;
         width: 100%;
