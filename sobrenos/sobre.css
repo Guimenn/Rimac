@@ -7,31 +7,34 @@
 }
 
 /* Estilo dos rastros neon */
-.trail {
+/*.trail {
   position: absolute;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: rgba(255, 0, 200, 0.7);
-  box-shadow: 0 0 15px rgba(255, 0, 200, 1), 0 0 30px rgba(255, 0, 200, 0.5);
+  background: #101820;
+  box-shadow: 0 0 15px #101820;
   pointer-events: none;
   animation: fade 0.5s ease-out forwards;
+ 
 }
+
 
 @keyframes fade {
   from {
-      transform: scale(1);
+      transform: scale(1.2);
       opacity: 1;
   }
   to {
-      transform: scale(0.5);
+      transform: scale(1.5);
       opacity: 0;
   }
 }
+    */
 
 body,
 main {
-  width: 99vw;
+  width: 99 vw;
 }
 
 body.lock-scroll {
@@ -216,8 +219,8 @@ input.hamburger-checkbox {
 .background img {
   width: 99vw;
   height: 100vh;
-  object-fit: cover;
   background-position: bottom center;
+  object-fit: cover;
   filter: brightness(40%);
   z-index: -1;
   position: absolute;
@@ -398,19 +401,39 @@ input.hamburger-checkbox {
   padding: 90px;
 }
 
-.foto1:hover .text-content {
+.buttoncheckbox {
+  width: 100px;
+  height: 50px;
+  margin-top: 10px;
+  background-image: url(img/add.png);
+}
+
+#opentext {
+  display: none;
+}
+
+.imagens label {
+  display: none;
+}
+#image-button {
+  width: 30px; /* Ajuste o tamanho da imagem */
+  height: 30px;
+  cursor: pointer; /* Mostra o cursor de pointer ao passar o mouse */
+  margin: 10px;
+}
+#opentext:checked ~ .text-content {
+  display: block;
+}
+
+#opentext:checked ~ .text-content {
   opacity: 1;
 }
 
-.foto2:hover .text-content {
+#opentext:checked ~ .text-content {
   opacity: 1;
 }
 
-.foto3:hover .text-content {
-  opacity: 1;
-}
-
-.foto4:hover .text-content {
+#opentext:checked ~ .text-content {
   opacity: 1;
 }
 
