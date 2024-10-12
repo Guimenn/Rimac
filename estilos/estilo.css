@@ -7,6 +7,7 @@
   padding: 0px;
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
+  cursor: url(chrome-extension://ckejmhbmlajgoklhgbapkiccekfoccmk/assets/pictos/cursor.png) 17 17, pointer !important;
 }
 
 body {
