@@ -235,8 +235,14 @@ input.hamburger-checkbox {
 
 #rimac {
   width: 400px;
-  padding-bottom: 40px;
+  padding-bottom: 40px; 
 }
+
+#alinhamento {
+  margin-bottom: 26px;
+}
+
+
 
 .divi {
   background-color: black;
