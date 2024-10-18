@@ -1,0 +1,15 @@
+.feature-list1 {
+    animation: anima_scroll linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+
+@keyframes anima_scroll {
+    0% {
+        transform: translate(-150px);
+    }
+    100% {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
