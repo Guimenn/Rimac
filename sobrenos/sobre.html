@@ -9,9 +9,12 @@
     <link rel="stylesheet" href="mediaquery.css">
     <link rel="shortcut icon" href="../imagens/rimac-logo2-scaled.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet">
-</head>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+     
+    </head>
 
-<body>
+    <body>
     <header>
         <div class="menu-container">
             <input type="checkbox" id="openmenu" class="hamburger-checkbox">
@@ -161,6 +164,10 @@
 
         <div class="parede">
             <div class="perfil">
+                <div class="circle" style="--clr:#f40103;">
+                    <img src="" alt="" class="logo">
+                </div>
+
             </div>
             <div class="linha">
             </div>
@@ -229,7 +236,7 @@
         const checkbox = document.getElementById('openmenu');
         const pai = document.querySelector('.pai');
         const body = document.body;
-
+        
         checkbox.addEventListener('change', function () {
             if (checkbox.checked) {
                 pai.style.filter = 'blur(32px)';
@@ -243,7 +250,15 @@
         const background = document.querySelector('.backgruond')
 
         background.style.filter = 'brightness(50%)'
-    </script>
+        </script>
+
+<script>
+particlesJS.load('particles-js', 'particles.json', function() {
+  console.log('particles.js loaded');
+});
+</script>
+
+
 </body>
 
 </html>

@@ -4,35 +4,19 @@
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
   cursor: url(chrome-extension://ckejmhbmlajgoklhgbapkiccekfoccmk/assets/pictos/cursor.png) 17 17, pointer !important;
+
+}
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
 }
 
-/* Estilo dos rastros neon */
-/*.trail {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #101820;
-  box-shadow: 0 0 15px #101820;
-  pointer-events: none;
-  animation: fade 0.5s ease-out forwards;
- 
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateX(-40px); }
+  100% { opacity: 10; transform: translateY(0); }
 }
-
-
-@keyframes fade {
-  from {
-      transform: scale(1.2);
-      opacity: 1;
-  }
-  to {
-      transform: scale(1.5);
-      opacity: 0;
-  }
-}
-    */
-
 body,
 main {
   width: 99 vw;
@@ -206,6 +190,7 @@ input.hamburger-checkbox {
 }
 
 .container {
+  animation: fadeIn 1s ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -312,6 +297,7 @@ input.hamburger-checkbox {
     background-size: cover;
 }*/
 .fundo {
+  animation: fadeIn 3s ease-in-out;
   background-color: rgb(62, 62, 62);
   height: 30vw;
   display: flex;
@@ -329,6 +315,7 @@ input.hamburger-checkbox {
 }
 
 .fundo2 {
+  animation: fadeIn 5s ease-in-out;
   height: 40vw;
   display: flex;
 }
@@ -452,6 +439,7 @@ input.hamburger-checkbox {
 }
 
 .parede {
+  animation: fadeIn 7s ease-in-out;
   width: 60.3vw;
   height: 40vw;
   display: flex;
@@ -463,9 +451,92 @@ input.hamburger-checkbox {
 .perfil {
   background: url(img/perfilMate.jpg);
   background-size: cover;
-  width: 40vw;
+  width: 60vw;
   height: 15vw;
   margin: auto 25px;
+}
+.perfil:hover{
+  width: 600px;
+  transition-delay: 0.5s;
+}
+.perfil .circle{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.perfil .circle::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: 8px solid var(--clr);
+  background: #191919;
+  transition: 0.5s, background 0.5s;
+  transition-delay: 0.75s,1s;
+  filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
+}
+.perfil:hover .circle::before{
+  width: 100%;
+  transition-delay: 0.5s;
+  height: 100%;
+  border-radius: 20px;
+  background: var(--clr);
+}
+.perfil .circle .logo{
+  position: relative;
+  width: 250px;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+.perfil:hover .circle .logo{
+  transform: scale(0);
+  transition-delay: 0s;
+}
+.perfil .product_img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0) rotate(315deg);
+  height: 300px;
+  transition: 0.5s ease-in-out;
+}
+.perfil:hover .product_img{
+  transition-delay: 0.75s;
+  transform: translate(-50%,-50%) scale(1) rotate(15deg);
+  top: 45%;
+  left: 75%;
+  height: 500px;
+}
+.perfil .content{
+  position:absolute;
+  width: 50%;
+  left: 20%;
+  padding: 20px 20px 20px 40px;
+  opacity: 0;
+  transition: 0.5s;
+  visibility: hidden;
+}
+.perfil:hover .content{
+  transition-delay: 0.75s;
+  opacity: 1;
+  visibility: visible;
+  left: 0;
+}
+.perfil .content h2{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2.4em;
+  line-height: 1em;
+}
+.perfil .content p{
+  color: #fff;
 }
 
 .linha {
@@ -482,6 +553,7 @@ input.hamburger-checkbox {
 }
 
 .carro {
+  animation: fadeIn 9s ease-in-out;
   background: url(img/culture-slider_img_06_progressive.jpg);
   height: 40vw;
   background-position: bottom center;
@@ -540,6 +612,7 @@ input.hamburger-checkbox {
 }
 
 footer {
+  animation: fadeIn 10s ease-in-out;
   display: block;
   margin: auto;
   background-color: #101820;
