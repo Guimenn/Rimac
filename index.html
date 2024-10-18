@@ -35,7 +35,8 @@
                             </li>
                             <li><a href="###" id="lista" target="_parent" rel="next">Carros</a>
                                 <ul class="submenu" type="none">
-                                    <li><a href="modelos/conceptone.html" target="_parent" rel="next">Concept One</a></li>
+                                    <li><a href="modelos/conceptone.html" target="_parent" rel="next">Concept One</a>
+                                    </li>
                                     <li><a href="modelos/nevera.html" target="_parent" rel="next">Nevera</a></li>
                                     <li><a href="modelos/ctwo.html" target="_parent" rel="next">Concept Two</a></li>
                                 </ul>
@@ -88,11 +89,12 @@
             </div>
         </section>
         <section class="carros">
-            <h1>Modelos</h1>        
+            <h1>Modelos</h1>
             <div class="modelos">
                 <div class="card2">
                     <h1>C-Two</h1>
-                    <div class="image-container"><img src="imagens/unnamed (1).png" alt="Rimac Concept Two"  style="object-fit: fill">
+                    <div class="image-container"><img src="imagens/unnamed (1).png" alt="Rimac Concept Two"
+                            style="object-fit: fill">
                         <a href="modelos/ctwo.html"><button>Compre o C-Two</button></a>
                     </div>
                 </div>
@@ -111,17 +113,17 @@
             </div>
         </section>
         <section class="contato">
-                <div class="imglado">
-                    <img src="imagens/P5-1.png" alt="">
-                </div>
-                <div class="textlado">
-                    <h1 id="encontre">Encontre seu Rimac</h1>
-                    <p>Ficou mais fácil encontrar seu carro do seus sonhos. Registre-se ou faça login para continuar</p>
-                    <a href="ativ/login.html" id="register">Registre-se</a>
-                    ou 
-                    <a href="ativ/cont.html" id="login">Faça login</a>
-                </div>
-              
+            <div class="imglado">
+                <img src="imagens/P5-1.png" alt="">
+            </div>
+            <div data-tilt data-tilt-reset="false" class="textlado your-element">
+                <h1 id="encontre">Encontre seu Rimac</h1>
+                <p>Ficou mais fácil encontrar seu carro do seus sonhos. Registre-se ou faça login para continuar</p>
+                <a href="ativ/login.html" id="register">Registre-se</a>
+                ou
+                <a href="ativ/cont.html" id="login">Faça login</a>
+            </div>
+
         </section>
 
     </main>
@@ -138,7 +140,7 @@
                 <a href="" class="button" target="_blank" rel="external">RIMAC GRUPO</a>
                 <a href="" class="button" target="_blank" rel="external">RIMAC AUTOMOBILI</a>
                 <a href="" class="button" target="_blank" rel="external">INVESTIMENTOS</a>
-               
+
             </div>
             <div class="baixo">
                 <div>
@@ -160,20 +162,22 @@
                     <h3>PROJETOS</h3>
                     <a href="https://github.com/Guimenn">Guimenn</a> <br>
                     <a href="https://github.com/palmitex">palmitex</a> <br>
-                    <a href="https://github.com/oQueirozzz">oQueirozzz</a> 
+                    <a href="https://github.com/oQueirozzz">oQueirozzz</a>
                 </div>
                 <div>
                     <h3>POLITICAS</h3>
-                    <p>Política de privacidade</p> <p>Termos e condições</p> <p>Política de Cookies</p>
+                    <p>Política de privacidade</p>
+                    <p>Termos e condições</p>
+                    <p>Política de Cookies</p>
                 </div>
-    
+
             </div>
         </div>
-       </footer>
+    </footer>
     </div>
 
     <script>
-        
+
         const checkbox = document.getElementById('openmenu');
         const blurr = document.querySelector('.blurr');
         const video = document.querySelector('.bg_video');
@@ -190,10 +194,21 @@
                 body.classList.remove('lock-scroll');
             }
         });
-        
-        
+
+
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous";></script>
+    <script>
+        const cards = document.querySelectorAll('.card2');
+
+        window.addEventListener('scroll', () => {
+            cards.forEach((card) => {
+                const rect = card.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    card.classList.add('animate');
+                }
+            });
+        });
+    </script>
 
 
 </body>
