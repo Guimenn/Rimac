@@ -1,4 +1,4 @@
-.feature-list1 {
+.feature-item1 {
     animation: anima_scroll linear;
     animation-timeline: view();
     animation-range: entry 0% cover 50%;

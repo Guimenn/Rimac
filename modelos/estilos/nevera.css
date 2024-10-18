@@ -195,6 +195,7 @@ input.hamburger-checkbox {
   text-align: center;
   position: relative;
   overflow: hidden;
+  animation: fadeIn 2s ease-in-out;
 }
 
 .t2::before {
@@ -254,6 +255,7 @@ input.hamburger-checkbox {
   text-align: center;
   position: relative;
   z-index: 5;
+  animation: fadeIn 3s ease-in-out;
 }
 
 .gradi {
@@ -290,6 +292,7 @@ input.hamburger-checkbox {
   display: flex;
   justify-content: space-between;
   gap: 30px;
+  animation: fadeIn 3s ease-in-out;
 }
 
 .feature-item1 {
@@ -302,6 +305,7 @@ input.hamburger-checkbox {
   position: relative;
   overflow: hidden;
   z-index: 2;
+  animation: fadeIn 3s ease-in-out;
 }
 
 .feature-item1 h3 {
@@ -344,6 +348,7 @@ input.hamburger-checkbox {
   padding: 60px 20px;
   color: #fff;
   text-align: center;
+  animation: fadeIn 4s ease-in-out;
 }
 
 .specs1 h2 {
@@ -446,6 +451,7 @@ footer{
   margin: auto;
   background-color: #101820;
   color: white;
+  animation: fadeIn 5s ease-in-out;
 }
 .baixo a{
   font-size: 12px;
@@ -463,3 +469,12 @@ footer{
   color: white;
 }
                                                                                               
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateX(-40px); }
+  100% { opacity: 10; transform: translateY(0); }
+}
