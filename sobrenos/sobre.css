@@ -8,6 +8,7 @@
   cursor: url(chrome-extension://ckejmhbmlajgoklhgbapkiccekfoccmk/assets/pictos/cursor.png) 17 17, pointer !important;
 
 }
+
 @keyframes fadeIn {
   0% { opacity: 0; transform: scale(0.95); }
   100% { opacity: 1; transform: scale(1); }
@@ -17,9 +18,11 @@
   0% { opacity: 0; transform: translateX(-40px); }
   100% { opacity: 10; transform: translateY(0); }
 }
+  
 body,
 main {
-  width: 99 vw;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 body.lock-scroll {
@@ -448,6 +451,10 @@ input.hamburger-checkbox {
   justify-content: space-between;
 }
 
+.perfil {
+  display: none;
+}
+
 /* .perfil {
   background: url(img/perfilMate.jpg);
   background-size: cover;
@@ -500,7 +507,7 @@ input.hamburger-checkbox {
 } */
 .card{
   position: relative;
-  width: 1000px;
+  width: 100%;
   height: 350px;
   border-radius: 20px;
   display: flex;
@@ -546,7 +553,7 @@ input.hamburger-checkbox {
 }
 .card .circle .logoMate{
   position: absolute;
-  width: 20.5vw;
+  width: 18.3vw;
   height: 100%;
   border-radius: 50%; /* Garante que a imagem siga o formato circular */
   object-fit: cover; /* Faz com que a imagem preencha o círculo */
@@ -640,6 +647,7 @@ input.hamburger-checkbox {
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100vw;
 }
 
 .founder {

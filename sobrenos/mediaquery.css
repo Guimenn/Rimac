@@ -4,6 +4,12 @@
   * {
     margin: 0px;
     padding: 0px;
+    
+  }
+
+  body {
+    width: 100%;
+    overflow-x: hidden;
   }
 
 
@@ -77,80 +83,20 @@
   }
 
   .parede {
-    width: 100%;
+    width: 90%;
     height: 100%;
-    margin: 50px 0px;
+    margin: 50px auto;
     display: flex;
     flex-direction: column;
 
   }
-  .card{
-    margin: auto;
-    width: 80%;
-    margin-left: 10px;
-    
-  }
-  .card:hover{
-    width: 90%;
-    margin-right: 30px;
-  }
-
-  .card .circle{
-    width: 100%;
-    margin: auto;
-  }
-  /* .card .circle::before{
-
-  }
-  .card:hover .circle::before{
-
-  } */
-  .card .circle .logoMate{
-    position: absolute;
-    width: 90vw;
-    height: 100%;
-    border-radius: 50%; /* Garante que a imagem siga o formato circular */
-    object-fit: cover; /* Faz com que a imagem preencha o círculo */
-    top: 0;
-    left: 0;
-    transition: 0.5s;
-    transform: translate(8px,9px);
-    overflow: hidden;
-  }
-  .card:hover .product_img{
-    width: 140vw;
-    height: 110vw;
-    padding-right: 20px;
-  }
-  .card .contentMate{
-    position:absolute;
-    width: 50%;
-    height: 100%;
-    left: 20%;
-    padding: 10px 10px 10px 20px;
-    opacity: 0;
-    transition: 0s;
-    visibility: hidden;
-  }
-
-  .card:hover .contentMate{
-    transition-delay: 0.75s;
-    opacity: 1;
-    visibility: visible;
-    left: 0;
-  }
-  .card .contentMate p{
   
-    font-size: 0.8em;
+  .card ,.circle ,.contentMate ,.logoMate {
+    display: none;
   }
-  .card .contentMate h2{
 
-    font-size: 1.1em;
-  }
-  .card .contentMate a{
-
-    font-size: 0.7em;
-  }
+  
+ 
   .linha {
     height: 1px;
     margin-top:  95px;
@@ -159,12 +105,18 @@
     margin-bottom: 20px;
   }
 
-  /* .perfil {
-    background-position: left center;
-    width: 800px;
-    height: 15vh;
+  .perfil {
+    display: block;
+  }
 
-  } */
+  .perfil img{
+    background-position: left center;
+    width: 90%;
+    margin: 0px auto;
+    display: block;
+    height: auto;
+    border-radius: 10%;
+  } 
 
   .proposito {
     font-size: 0.8em;
@@ -193,41 +145,26 @@
     line-height: 1.8;
   }
 
+
+
   .fundo2 {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     height: 100%;
-
   }
+    
 
-  .foto1 {
-    width: 105vw;
+  
+
+
+  .foto1, .foto2, .foto3, .foto4 {
+    width: 100%;
     height: 50vh;
+    transform: translateY(0px);
   }
 
-  #textaltura1 {
-    font-size: 8px;
-    line-height: 1.8;
-    margin-bottom: 20px;
-  }
 
-  .foto2 {
-    width: 105vw;
-    height: 50vh;
-  }
-
-  .foto3 {
-    width: 105vw;
-    height: 40vh;
-    transform: translateY(-60px);
-
-  }
-
-  .foto4 {
-    width: 105vw;
-    height: 40vh;
-  }
 
   .imagens label {
     display: block;
@@ -305,6 +242,12 @@
     height: 80vh;
   }
 
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+
   div.menu-pane {
     background-color: #ffffff;
     position: absolute;
@@ -377,6 +320,7 @@
 
   .fundo {
     height: 38vh;
+    width: 100vw  ;
 
 
   }
@@ -391,8 +335,9 @@
   .text-content {
     padding: 40px;
     height: 40%;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 1.8;
+  
   }
 
   .imagens label {
@@ -428,37 +373,35 @@
     opacity: 0;
   }
 
+  .perfil img{
+    background-position: left center;
+    width: 70%;
+    margin: 0px auto;
+    display: block;
+    height: auto;
+    border-radius: 10%;
 
+
+  } 
+  .perfil {
+    display: block;
+  }
+
+  .imagens {
+    width: 100vw
+  }
 
   .fundo2 {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
-
   }
 
-  .foto1 {
+  .foto1, .foto2, .foto3, .foto4 {
     width: 100%;
-    height: 100vh;
-  }
-
-  .foto2 {
-    width: 100%;
-    height: 100vh;
-    transform: translateY(-0px);
-  }
-
-  .foto3 {
-    width: 100%;
-    height: 100vh;
-    transform: translateY(-0px);
-
-  }
-
-  .foto4 {
-    width: 100%;
-    height: 100vh;
+    height: 70vh;
+    transform: translateY(0px);
   }
 
   .parede {
@@ -468,71 +411,8 @@
     display: flex;
     flex-direction: column;
   }
-  .card{
-    margin: auto;
-    width: 40%;
-    
-  }
-  .card:hover{
-    width: 80%;
-
-  }
-
-  .card .circle{
-    width: 100%;
-    margin: auto;
-  }
-  /* .card .circle::before{
-
-  }
-  .card:hover .circle::before{
-
-  } */
-  .card .circle .logoMate{
-    position: absolute;
-    width: 105%;
-    height: 100%;
-    border-radius: 50%; /* Garante que a imagem siga o formato circular */
-    object-fit: cover; /* Faz com que a imagem preencha o círculo */
-    top: 0;
-    left: 0;
-    transition: 0.5s;
-    transform: translate(8px,9px);
-    overflow: hidden;
-  }
-  .card:hover .product_img{
-    width: 90vw;
-    height: 60vw;
-    padding-right: 20px;
-  }
-  .card .contentMate{
-    position:absolute;
-    width: 50%;
-    height: 100%;
-    left: 20%;
-    padding: 10px 10px 10px 20px;
-    opacity: 0;
-    transition: 0s;
-    visibility: hidden;
-  }
-
-  .card:hover .contentMate{
-    transition-delay: 0.75s;
-    opacity: 1;
-    visibility: visible;
-    left: 0;
-  }
-  .card .contentMate p{
-  
-    font-size: 1.1em;
-  }
-  .card .contentMate h2{
-
-    font-size: 1.6em;
-  }
-  .card .contentMate a{
-
-    font-size: 1em;
+  .card ,.circle ,.contentMate ,.logoMate {
+    display: none;
   }
 
   .linha {
@@ -557,6 +437,10 @@
     margin-right: 5vw;
     padding: 50px;
     padding-right: 80px
+  }
+
+  .carro {
+    width: 100vw;
   }
 
 
@@ -584,6 +468,10 @@
   
   .fundo2{
     width: 100%;
+  }
+
+  .perfil {
+    display: none ;
   }
   .foto1 {
     width: 100%;
@@ -633,7 +521,7 @@
     
   }
   .card:hover{
-    width: 300vw;
+    width: 400vw;
 
   }
 
@@ -649,7 +537,7 @@
   } */
   .card .circle .logoMate{
     position: absolute;
-    width: 27.3vw;
+    width: 27.5vw;
     height: 100%;
     border-radius: 50%; /* Garante que a imagem siga o formato circular */
     object-fit: cover; /* Faz com que a imagem preencha o círculo */
