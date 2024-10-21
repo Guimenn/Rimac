@@ -300,7 +300,7 @@ input.hamburger-checkbox {
     background-size: cover;
 }*/
 .fundo {
-  animation: fadeIn 3s ease-in-out;
+  animation: fadeIn 2s ease-in-out;
   background-color: rgb(62, 62, 62);
   height: 30vw;
   display: flex;
@@ -318,7 +318,7 @@ input.hamburger-checkbox {
 }
 
 .fundo2 {
-  animation: fadeIn 5s ease-in-out;
+  animation: fadeIn 3s ease-in-out;
   height: 40vw;
   display: flex;
 }
@@ -442,7 +442,7 @@ input.hamburger-checkbox {
 }
 
 .parede {
-  animation: fadeIn 7s ease-in-out;
+  animation: fadeIn 5s ease-in-out;
   width: 80vw;
   height: 40vw;
   display: flex;
@@ -537,7 +537,7 @@ input.hamburger-checkbox {
   height: 350px;
   border-radius: 50%;
   border: 8px solid var(--clr);
-  background: #191919;
+  background: #17232f;
   transition: 0.5s, background 0.5s;
   transition-delay: 0.75s,1s;
   filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
@@ -641,7 +641,7 @@ input.hamburger-checkbox {
 }
 
 .carro {
-  animation: fadeIn 9s ease-in-out;
+  animation: fadeIn 6s ease-in-out;
   background: url(img/culture-slider_img_06_progressive.jpg);
   height: 40vw;
   background-position: bottom center;
@@ -701,7 +701,7 @@ input.hamburger-checkbox {
 }
 
 footer {
-  animation: fadeIn 10s ease-in-out;
+  animation: fadeIn 7s ease-in-out;
   display: block;
   margin: auto;
   background-color: #101820;
