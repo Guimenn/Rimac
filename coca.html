@@ -25,26 +25,34 @@ body{
     width: 350px;
     height: 350px;
     /* background: #333; */
-    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 0.5s;
 }
+
+.logo {
+    width: 70%; /* Ajuste o tamanho do círculo interior */
+    height: 70%;
+    border-radius: 50%;
+    border: 8px solid var(--clr);
+    object-fit: cover; /* Faz com que a imagem preencha o círculo */
+    
+}
 .card:hover{
     width: 600px;
     transition-delay: 0.5s;
+    
 }
-.card .circle{
-    position: absolute;
+.card .logo{
     width: 100%;
+    position: absolute;
     height: 100%;
-    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.card .circle::before{
+.card .logo::before{
     content: '';
     position: absolute;
     top: 0;
@@ -53,12 +61,12 @@ body{
     height: 350px;
     border-radius: 50%;
     border: 8px solid var(--clr);
-    background: #191919;
+    background: #211130;
     transition: 0.5s, background 0.5s;
     transition-delay: 0.75s,1s;
     filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
 }
-.card:hover .circle::before{
+.card:hover .logo::before{
     width: 100%;
     transition-delay: 0.5s;
     height: 100%;
@@ -129,9 +137,7 @@ body{
     </head>
     <body>
         <div class="card">
-            <div class="circle" style="--clr:#f40103;">
-                <img src="cocacola_logo.png" alt="" class="logo">
-            </div>
+            <img src="sobrenos/img/perfilMate.jpg" alt="" class="logo" style="--clr:#13144b;">
             <div class="content">
                 <h2>cocacola</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel possimus cumque magnam consequatur illum blanditiis nihil.</p>

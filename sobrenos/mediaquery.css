@@ -80,25 +80,97 @@
     width: 100%;
     height: 100%;
     margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
 
   }
+  .card{
+    margin: auto;
+    width: 80%;
+    margin-left: 10px;
+    
+  }
+  .card:hover{
+    width: 90%;
+    margin-right: 30px;
+  }
 
+  .card .circle{
+    width: 100%;
+    margin: auto;
+  }
+  /* .card .circle::before{
+
+  }
+  .card:hover .circle::before{
+
+  } */
+  .card .circle .logoMate{
+    position: absolute;
+    width: 90vw;
+    height: 100%;
+    border-radius: 50%; /* Garante que a imagem siga o formato circular */
+    object-fit: cover; /* Faz com que a imagem preencha o círculo */
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    transform: translate(8px,9px);
+    overflow: hidden;
+  }
+  .card:hover .product_img{
+    width: 140vw;
+    height: 110vw;
+    padding-right: 20px;
+  }
+  .card .contentMate{
+    position:absolute;
+    width: 50%;
+    height: 100%;
+    left: 20%;
+    padding: 10px 10px 10px 20px;
+    opacity: 0;
+    transition: 0s;
+    visibility: hidden;
+  }
+
+  .card:hover .contentMate{
+    transition-delay: 0.75s;
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+  }
+  .card .contentMate p{
+  
+    font-size: 0.8em;
+  }
+  .card .contentMate h2{
+
+    font-size: 1.1em;
+  }
+  .card .contentMate a{
+
+    font-size: 0.7em;
+  }
   .linha {
-    height: 200px;
-    margin: 0px 15px 0px 0px;
+    height: 1px;
+    margin-top:  95px;
+    margin-right: 35px;
+    width: 90%;
+    margin-bottom: 20px;
   }
 
-  .perfil {
+  /* .perfil {
     background-position: left center;
     width: 800px;
     height: 15vh;
 
-  }
+  } */
 
   .proposito {
     font-size: 0.8em;
     margin: auto;
-    padding-right: 10px;
+    padding: 30px;
+    padding-right: 60px;
   }
 
   .fundo {
@@ -130,7 +202,7 @@
   }
 
   .foto1 {
-    width: 100vw;
+    width: 105vw;
     height: 50vh;
   }
 
@@ -141,19 +213,19 @@
   }
 
   .foto2 {
-    width: 100vw;
+    width: 105vw;
     height: 50vh;
   }
 
   .foto3 {
-    width: 100vw;
+    width: 105vw;
     height: 40vh;
     transform: translateY(-60px);
 
   }
 
   .foto4 {
-    width: 100vw;
+    width: 105vw;
     height: 40vh;
   }
 
@@ -393,24 +465,98 @@
     width: 100%;
     height: 100%;
     margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .card{
+    margin: auto;
+    width: 40%;
+    
+  }
+  .card:hover{
+    width: 80%;
+
+  }
+
+  .card .circle{
+    width: 100%;
+    margin: auto;
+  }
+  /* .card .circle::before{
+
+  }
+  .card:hover .circle::before{
+
+  } */
+  .card .circle .logoMate{
+    position: absolute;
+    width: 105%;
+    height: 100%;
+    border-radius: 50%; /* Garante que a imagem siga o formato circular */
+    object-fit: cover; /* Faz com que a imagem preencha o círculo */
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    transform: translate(8px,9px);
+    overflow: hidden;
+  }
+  .card:hover .product_img{
+    width: 90vw;
+    height: 60vw;
+    padding-right: 20px;
+  }
+  .card .contentMate{
+    position:absolute;
+    width: 50%;
+    height: 100%;
+    left: 20%;
+    padding: 10px 10px 10px 20px;
+    opacity: 0;
+    transition: 0s;
+    visibility: hidden;
+  }
+
+  .card:hover .contentMate{
+    transition-delay: 0.75s;
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+  }
+  .card .contentMate p{
+  
+    font-size: 1.1em;
+  }
+  .card .contentMate h2{
+
+    font-size: 1.6em;
+  }
+  .card .contentMate a{
+
+    font-size: 1em;
   }
 
   .linha {
-    height: 250px;
+    height: 1px;
     margin: 0px 15px 0px 0px;
+    width: 90%;
+    margin-top: 140px;
+
+    margin-right: 80px;
   }
 
-  .perfil {
+  /* .perfil {
     background-position: left center;
     width: 100%;
     height: 200px;
 
-  }
+  } */
 
   .proposito {
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin: auto;
     margin-right: 5vw;
+    padding: 50px;
+    padding-right: 80px
   }
 
 
@@ -475,29 +621,98 @@
   }
   .parede {
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     margin: 50px 0px;
     padding-left: 150px;
   
   }
   
+  .card{
+    margin: auto;
+    width: 150vw;
+    
+  }
+  .card:hover{
+    width: 300vw;
+
+  }
+
+  .card .circle{
+    width: 100%;
+    margin: auto;
+  }
+  /* .card .circle::before{
+
+  }
+  .card:hover .circle::before{
+
+  } */
+  .card .circle .logoMate{
+    position: absolute;
+    width: 27.3vw;
+    height: 100%;
+    border-radius: 50%; /* Garante que a imagem siga o formato circular */
+    object-fit: cover; /* Faz com que a imagem preencha o círculo */
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    transform: translate(8px,9px);
+  }
+  .card:hover .product_img{
+    width: 60vw;
+    height: 40vw;
+    padding-right: 20px;
+  }
+  .card .contentMate{
+    position:absolute;
+    width: 50%;
+    height: 100%;
+    left: 20%;
+    padding: 10px 10px 10px 20px;
+    opacity: 0;
+    transition: 0s;
+    visibility: hidden;
+  }
+
+  .card:hover .contentMate{
+    transition-delay: 0.75s;
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+  }
+  .card .contentMate p{
+  
+    font-size: 1em;
+  }
+  .card .contentMate h2{
+
+    font-size: 1.6em;
+  }
+  .card .contentMate a{
+
+    font-size: 0.9em;
+  }
+
   .linha {
-    height: 300px;
-    margin: 0px 25px 0px 0px;
+    height: 450px;
+    margin-left: 60px;
+    margin-top: 30px;
   }
-  
-  .perfil {
+
+  /* .perfil {
     background-position: left center;
-    width: 70vw;
-    height: 30vh;
-    padding-right: 0px;
-  
-  }
-  
+    width: 100%;
+    height: 200px;
+
+  } */
+
   .proposito {
-    font-size: 1.4em;
-    margin:  auto;
-    padding-right: 250px;
+    font-size: 1.5em;
+    margin: auto;
+    margin-right: 5vw;
+    padding: 50px;
+    padding-right: 80px
   }
+
 
 }
