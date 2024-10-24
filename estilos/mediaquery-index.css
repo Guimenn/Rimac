@@ -145,6 +145,27 @@
         margin: auto;
       }
 
+      .cards-container {
+       display: flex;
+       flex-direction: column;
+      }
+
+      .card {
+        width: 70%;
+        margin: auto;
+      }
+
+      .modelos {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+
+      .card2 {
+        margin: auto;
+      }
+
+
       
         div.menu-pane {
         background-color: #ffffff;
