@@ -295,7 +295,15 @@
     padding: 10px 20px;
   }
 
-
+  #alinhamento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 16%;
+    font-size: 1rem;
+    width: 100%;
+  }
 
   #bugatti,
   #rimac {
@@ -310,13 +318,12 @@
     width: 180px;
     margin-top: 20px;
   }
-
   .rimac {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+  } 
 
   .fundo {
     height: 38vh;
@@ -464,6 +471,15 @@
   }
   #align{
     margin-top: 50px;
+  }
+
+  #alinhamento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 46%;
+    width: 100%;
   }
   
   .fundo2{
